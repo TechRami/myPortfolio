@@ -54,12 +54,18 @@ a {
 	animation: animate1 2s linear infinite;
 }
 
-
 .text-content h1 {
 	font-size: 64px;
 	color: #62C5B3
 }
 
+.text-content .download-btn{
+	background: #62C5B3;
+	border: 0;
+	padding: 20px 30px;
+	border-radius: 7px;
+	
+}
 
 /*  */
 
@@ -292,7 +298,7 @@ a {
 		font-size: 22px !important;
 	}
 	.text-content h5{
-		font-size: 9px !important;
+		font-size: 8px !important;
 	}
 	header{
 		display: flex;
@@ -303,11 +309,16 @@ a {
 		margin: 0 auto;
 	}
 	.nav{
-		margin-left: 0px;;
+		margin-left: 0px;
 	}
 	li a{
-		font-size: 10px;
+		font-size: 14px;
 		margin-top: 10px;
+	}
+
+	
+	.c-container{
+		width: 100% !important;
 	}
 }
 
