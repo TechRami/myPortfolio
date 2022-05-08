@@ -27,7 +27,7 @@ body {
 }
 
 a {
-    color: #62C5B3 !important;
+	color: #62C5B3 !important;
     font-weight: 300 !important;
 }
 
@@ -37,10 +37,14 @@ a {
 	margin-left: 40vw;
 }
 
+.text-content h1 {
+	font-size: 3.1vw;
+	color: #62C5B3
+}
 
 .blue-icons{
 	position: absolute;
-	padding: 30px 30px;
+	padding: 1.5vw 1.5vw;
     transform: rotate(10deg);
 	overflow: hidden;
 	z-index: -1;
@@ -58,7 +62,7 @@ a {
 
 .sblue-icons{
 	position: absolute;
-	padding: 30px 30px;
+	padding: 1.5vw 1.5vw;
     transform: rotate(10deg);
 	overflow: hidden;
 	z-index: -1;
@@ -74,10 +78,6 @@ a {
 	animation: animate1 2s linear infinite;
 }
 
-.text-content h1 {
-	font-size: 64px;
-	color: #62C5B3
-}
 
 .text-content .download-btn{
 	background: #62C5B3;
@@ -234,7 +234,7 @@ a {
 
 .gray-icons{
 	position: absolute;
-	padding: 30px 30px;
+	padding: 1.5vw 1.5vw;
     transform: rotate(10deg);
 	overflow: hidden;
 	z-index: -1;
@@ -252,7 +252,7 @@ a {
 
 .sgray-icons{
 	position: absolute;
-	padding: 30px 30px;
+	padding: 1.5vw 1.5vw;
     transform: rotate(10deg);
 	overflow: hidden;
 	z-index: -1;
@@ -389,7 +389,7 @@ a {
 
 @media only screen and (max-width: 1450px)  {
 	.text-content h1{
-		font-size: 54px !important;
+		font-size: 2.8vw !important;
 	}
 	.text-content .download-btn{
 		padding: 17px 25px;
