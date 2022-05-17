@@ -7,6 +7,10 @@
     <title>Rami's Portfolio Page</title>
     <link rel="stylesheet" href="dist/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -95,15 +99,15 @@
                  </div>
             </div>
             <div class="col-md-5 order-md-1 text-center align-self-center">
-                <img style="width: 80%; height: auto;" src="dist/image/undraw_product_iteration_kjok.svg" alt="programmer-vector">
+                <img style="width: 80%; height: auto; float: right;" src="dist/image/undraw_product_iteration_kjok.svg" alt="programmer-vector">
             </div>
           </div>
     </section>
 
     <section style="width: 80% !important; margin-top: 200px;" class="container-fluid">
         <div class="d-flex align-items-center">
-            <img width="100vw" src="dist/image/question-vector.svg" alt="">
-            <h2 style="color: #62C5B3; margin-left: 50px;">WHO AM I?</h2>
+            <img class="aboutme-img" src="dist/image/question-vector.svg" alt="">
+            <h2 style="color: #62C5B3;">WHO AM I?</h2>
         </div>
         <div class="row">
             <div class="col-md-6 order-1 text-center align-self-center mt-5">
@@ -112,13 +116,179 @@
                 </p>
             </div>
             <div class="col-md-6 order-md-1 text-center mt-5">
-                <img width="70%" src="dist/image/undraw_hacker_mind_-6-y85 1.svg" alt="">
+                <img width="70%" style="float: right;" src="dist/image/undraw_hacker_mind_-6-y85 1.svg" alt="">
             </div>
         </div>
-    
+    </section>
+
+    <section style="margin-top: 200px;" class="container-fluid">
+        <div style="width: 80% !important; margin: 0 auto 100px auto;" class="d-flex align-items-center">
+            <img class="experience-img"  src="dist/image/Experience-vector.svg" alt="">
+            <h2 style="color: #62C5B3; text-transform: uppercase;">Experience</h2>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+        </div>
+    </section>
+
+   <!-- Slider main container -->
+   <!-- <section id="cs-container">
+    <div id="slider-container">
+      <span onclick="slideRight()" class="btn"></span>
+        <div id="slider">
+          <div class="slide"><span>1</span></div>
+          <div class="slide"><span>2</span></div>
+          <div class="slide"><span>3<span></div>
+          <div class="slide"><span>4</span></div>
+          <div class="slide"><span>5</span></div>
+          <div class="slide"><span>6</span></div>
+          <div class="slide"><span>7</span></div>
+          <div class="slide"><span>8</span></div>
+          <div class="slide"><span>9</span></div>
+          <div class="slide"><span>10</span></div>
+      </div>
+      <span onclick="slideLeft()" class="btn"></span>
+    </div>
+   </section> -->
+
+<!-- Slider main container -->
+    <section style="margin-top: 200px;" class="container-fluid">
+        <div style="width: 80% !important; margin: 0 auto 100px auto;" class="d-flex align-items-center">
+            <img class="selfProject-img" width="100vw" src="dist/image/Self-projects.svg" alt="">
+            <h2 style="color: #62C5B3; text-transform: uppercase;">Self Projects</h2>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+               <div class="box">
+                   <img width="100%" height="50%"src="dist/image/projects/invision.png" alt="">
+                   <h5 class="m-3">Invision Web Page</h5>
+                   <hr />
+                   <p class="m-3">In this project I recreated the InVision web page using html, css and bootstrap 5 to practice my front-end skills.</p>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                   <img width="100%" height="50%"src="dist/image/projects/To-Do-List.png" alt="">
+                   <h5 class="m-3">Todo List Page</h5>
+                   <hr />
+                   <p class="m-3">In this project I used html, css and Javascript to create a simple todo list web application for practice purposes.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                   <img width="100%" height="50%"src="dist/image/projects/portfolio-page.png" alt="">
+                   <h5 class="m-3">Portfolio Page</h5>
+                   <hr />
+                   <p class="m-3">In this project I used html, css and bootrstrap5 to create a portfolio page, which is an old portfolio page of mine.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img width="100%" height="50%"src="dist/image/projects/bookstore-page.png" alt="">
+                   <h5 class="m-3">Book store web page</h5>
+                   <hr />
+                   <p class="m-3">In this project I used figma, html, css and bootrstrap5 to design and create a book store page for my training course.</p>
+                </div>
+            </div>
+           
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
 
 
+    <section style="margin-top: 200px;" class="container-fluid">
+        <div style="width: 80% !important; margin: 0 auto 100px auto;" class="d-flex align-items-center">
+            <img class="contact-img" src="dist/image/CONTACT-ME.svg" alt="">
+            <h2 style="color: #62C5B3; text-transform: uppercase;">Contact Me</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img style="width: 50%; height: auto;" src="dist/image/personal_email.svg" alt="personal_email_img">
+            </div>
+            <div class="col-md-6">
+                <form action="submit" class="d-flex flex-column">
+                    <label style="color: white;" for="email">Email:</label>
+                    <input class="form-input" type="text" placeholder="something@gmail.com">
+                    <label style="color: white;" class="mt-5" for="message">Message:</label>
+                    <textarea class="form-textarea" name="message" id="e-message" cols="50" rows="10" placeholder=" Write your message..."></textarea>
+                    <div class="btn-container">
+                        <button style="float: right !important;" class="sumbit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 100px; width: 95%; margin-bottom: 200px;" class="container-fluid">
+        <div class="scroll-btn text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" fill="#62C5B3" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+              </svg>
+        </div>
+    </footer>
+
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  
+  loop: true,
+  autoplay: {
+   delay: 5000,
+ },
+  
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 100,
+    }
+  },         
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

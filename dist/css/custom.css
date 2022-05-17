@@ -88,6 +88,49 @@ a {
 	margin-bottom: 10px;
 }
 
+.aboutme-img{
+	width: 100px;
+	margin-right: 50px;
+}
+
+.experience-img {
+	width: 80px;
+	margin-right: 50px;
+}
+
+.selfProject-img {
+	width: 100px;
+	margin-right: 50px;
+}
+
+.contact-img{
+	width: 100px;
+	margin-right: 50px;
+}
+
+
+.form-textarea{
+	background: none;
+	border: 1px solid #3D3D3D; 
+	margin-top: 15px;
+	width: 70%;
+}
+
+.form-input{
+	background: none;
+	border: none;
+	border-bottom: 1px solid #3D3D3D;
+	margin-top: 10px;
+	width: 50%; 
+}
+
+.btn-container {
+	width: 70%;
+	margin-top: 18px;
+}
+
+
+
 /*  */
 
 .bottom-icons .blue-icons{
@@ -374,6 +417,57 @@ a {
 }
 
 
+.logo-container{
+	background: #2B2B2B;
+	border: 1px solid #3D3D3D;
+}
+
+
+.swiper {			
+	height: 500px;
+}
+
+.box{
+	height: 450px;
+	width: 336px !important;
+	background: #2B2B2B;
+}
+
+.box h5, p{
+	color: #e6e6e6;
+}
+
+
+.swiper-button-prev {
+    color: #62C5B3 !important; 
+}
+
+.swiper-button-next {
+    color: #62C5B3 !important; 
+}
+
+
+.sumbit-btn{
+	padding: 13px 50px;
+	border: none;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 8px;
+	background: #62C5B3;
+	color: #2B2B2B;
+}
+
+
+.scroll-btn {
+	width: 56px;
+	padding: 12px 0px;
+	border-radius: 4px;
+	background: #2b2b2b;
+	float: right;
+}
+
+
+
 /* =================================================================  */
 /* =================================================================  */
 /* =================================================================  */
@@ -468,6 +562,15 @@ a {
 		display: flex;
 		justify-content: flex-end;
 	}
+
+	.sumbit-btn{
+		padding: 13px 40px;
+		font-size: 16px;
+		font-weight: 600;
+		border-radius: 8px;
+		background: #62C5B3;
+		color: #2B2B2B;
+	}
 	
 	
 
@@ -504,12 +607,69 @@ a {
 		margin-top: 10px;
 	}
 
-	
 	.c-container{
+		width: 100% !important;
+	}
+
+	.experience-img{
+		width: 50px;
+		margin-right: 20px;
+	}
+
+	.selfProject-img{
+		width: 70px;
+		margin-right: 20px;
+	}
+
+	.aboutme-img{
+		width: 70px;
+		margin-right: 20px;
+	}
+
+	.contact-img{
+		width: 70px;
+		margin-right: 20px;
+	}
+
+	
+	form .form-input, .form-textarea, label {
+		width: 100% !important;
+		margin: 0 0 !important;
+	}
+
+	.sumbit-btn{
+		padding: 13px 25px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	.btn-container {
 		width: 100% !important;
 	}
 }
 
+@media only screen and (max-width: 767px){ 
+	form {
+		margin-top: 50px;
+	}
+
+	form .form-input, .form-textarea, label {
+		width: 50%;
+		margin: 0 auto !important;
+	}
+
+	.sumbit-btn{
+		padding: 13px 25px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	.btn-container {
+		width: 75%;
+	}
+
+	
+}
 
 
 /*  */
