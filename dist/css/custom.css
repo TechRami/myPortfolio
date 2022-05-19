@@ -446,7 +446,7 @@ a {
 
 
 .swiper-button-prev {
-    color: #62C5B3 !important; 
+    color: #62C5B3 !important;
 }
 
 .swiper-button-next {
@@ -487,6 +487,12 @@ a {
 	}
 }
 
+@media only screen and (max-width: 1670px) {
+	.text-content h5 {
+		font-size: 16px;
+	}
+}
+
 
 @media only screen and (max-width: 1450px)  {
 	.text-content h1{
@@ -498,6 +504,10 @@ a {
 
 	.aboutme-row-img{
 		width: 400px;
+	}
+
+	.text-content h5 {
+		font-size: 13px;
 	}
 }
 
@@ -645,6 +655,16 @@ a {
 		width: 70px;
 		margin-right: 20px;
 	}
+
+	.swiper-button-prev, .swiper-button-next {
+		opacity: 0;
+	}
+
+	.swiper-slide .box {
+		margin: 0 auto !important;
+	}
+	
+
 
 	
 	form .form-input, .form-textarea, label {
