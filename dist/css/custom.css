@@ -121,7 +121,16 @@ a {
 	border: 1px solid #3D3D3D; 
 	margin-top: 15px;
 	width: 70%;
+	outline: 0;
+	transition: outline 0.3s;
+	color: #fff;
 }
+
+.form-textarea:focus {
+	outline: 1px solid #62C5B3;
+}
+
+
 
 .form-input{
 	background: none;
@@ -129,7 +138,15 @@ a {
 	border-bottom: 1px solid #3D3D3D;
 	margin-top: 10px;
 	width: 50%; 
+	outline: none;
+	transition: border-bottom 0.3s;
+	color: #fff;
 }
+
+.form-input:focus{
+	border-bottom: 1px solid #62C5B3;
+}
+
 
 .btn-container {
 	width: 70%;
@@ -607,6 +624,10 @@ a {
 	}
 	.text-content h5{
 		font-size: 8px !important;
+	}
+
+	h2 {
+		font-size: 23px !important;
 	}
 
 	.text-content .download-btn{
