@@ -9,6 +9,7 @@
     scrollbar-color: #5c5c5c #ffffff;
 }
 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -17,7 +18,26 @@ body {
     background-color: #181A1B !important;
 }
 
+img {
+	-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 
+.mySwiper2{
+	width: 80%;
+	height: 100%;
+}
+
+.swiper-container-2 .swiper-slide {
+	background: #2B2B2B;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 11px;
+}
 
   *::-webkit-scrollbar {
     width: 11px;
@@ -121,6 +141,24 @@ a {
 	width: 80px;
 	margin-right: 50px;
 }
+
+.experience-sec-ul {
+	list-style-type: none;
+	margin-left: 40px;
+}
+
+.experience-sec-ul li:before {
+	content: '\2013';
+	position: absolute;
+	margin-left: -20px;
+  }
+
+.experience-sec-ul li{
+	color: #fff;
+	font-size: 22px;
+
+}
+
 
 .selfProject-img {
 	width: 100px;
@@ -472,6 +510,7 @@ a {
 	height: 450px;
 	width: 336px !important;
 	background: #2B2B2B;
+	cursor: pointer;
 }
 
 .box h5, p{
@@ -693,6 +732,12 @@ a {
 		width: 75px;
 		margin-right: 20px;
 	}
+
+	.mySwiper2{
+		width: 100%;
+		padding: 0 0;
+	}
+
 
 	.swiper-button-prev, .swiper-button-next {
 		opacity: 0;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dist/image/R.svg">
     <title>Rami's Portfolio Page</title>
     <link rel="stylesheet" href="dist/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -126,19 +127,45 @@
             <img class="experience-img"  src="dist/image/Experience-vector.svg" alt="">
             <h2 style="color: #62C5B3; text-transform: uppercase;">Experience</h2>
         </div>
-        <div class="row justify-content-center text-center">
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-        </div>
-        <div class="row justify-content-center text-center">
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
-            <div class="col p-5 logo-container"><img src="dist/image/HTML 5 Vector Logo.svg" alt=""></div>
+        <div class="swiper-container-2 swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-6 order-1 align-self-center">
+                            <h1 style="color: #62C5B3;"class="ms-4 mt-5 p-3">Frontend Stack</h1>
+                            <ul class="experience-sec-ul">
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>VueJS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 order-md-1 text-center">
+                            <img width="100%" src="dist/image/FRONT-END-STACK.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+             <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-md-6 order-1 align-self-center">
+                        <h1 style="color: #62C5B3;"class="ms-4 mt-5 p-3">Backend Stack</h1>
+                        <ul class="experience-sec-ul">
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 order-md-1 text-center align-self-center">
+                        <img width="100%"src="dist/image/BACK-END-STACK.svg" alt="BACK-END-IMG">
+                    </div>
+                </div>
+             </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -168,7 +195,7 @@
             <img class="selfProject-img" width="100vw" src="dist/image/Self-projects.svg" alt="">
             <h2 style="color: #62C5B3; text-transform: uppercase;">My Work</h2>
         </div>
-        <div class="swiper">
+        <div class="swiper-container-1 swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
@@ -251,51 +278,62 @@
     <script src="dist/js/script.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+var swiper1 = new Swiper('.swiper-container-1', {
   // Optional parameters
   
-  loop: true,
-  autoplay: {
-   delay: 5000,
- },
-  
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      centeredSlides: true,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 250
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 340,
-    },
-    1280: {
-        slidesPerView: 4,
-      spaceBetween: 300,
-    }
-  },         
-  
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: true,
+            },
+            // when window width is >= 480px
+            480: {
+            slidesPerView: 2,
+            spaceBetween: 250
+            },
+            // when window width is >= 640px
+            640: {
+            slidesPerView: 4,
+            spaceBetween: 340,
+            },
+            1280: {
+                slidesPerView: 4,
+            spaceBetween: 300,
+            }
+        },         
+        
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        debugger: true,
 
 });
+
+var swiper2 = new Swiper(".swiper-container-2", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
