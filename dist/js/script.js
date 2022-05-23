@@ -4,3 +4,5 @@ const animateBtn = () =>{
 }
 
 menuBtn.addEventListener('click', animateBtn)
+
+
