@@ -63,6 +63,9 @@ img {
     margin-left: 50px;
 }
 
+.bgc-dark{
+	background: #2B2B2B !important;
+}
 
 
 .nav-item{
@@ -607,6 +610,9 @@ a {
 /* =================================================================  */
 /*  */
 
+
+
+
 @media only screen and (min-width: 439px)  {
 	.text-content .download-btn{
 		float: right;
@@ -619,6 +625,8 @@ a {
 		font-size: 16px;
 	}
 }
+
+
 
 
 @media only screen and (max-width: 1450px)  {
@@ -683,6 +691,7 @@ a {
 	}
 
 }
+
 
 @media only screen and (max-width: 970px){
 	.text-content {
@@ -828,6 +837,10 @@ a {
 @media only screen and (max-width: 767px){ 
 	form {
 		margin-top: 50px;
+	}
+
+	.navbar {
+		width: 100% !important;
 	}
 
 	.aboutme-section-first-row{
