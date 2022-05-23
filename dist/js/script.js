@@ -1,17 +1,21 @@
 const menuBtn = document.querySelector('.menu-btn');
 const navbar = document.querySelector('.navbar')
+// const darkModeBtn = document.querySelector('.darkModeBtn')
+const pageBody = document.getElementById('pageBody')
 
+// const darkMode = () => {
+//     pageBody.classList.toggle('darkMode')
+// }
 
 
 const animateBtn = () =>{
     menuBtn.classList.toggle('active');
-    
-}
-
-const navbarBgcolor = () =>{
     navbar.classList.toggle('bgc-dark');
 }
 
+
+
 menuBtn.addEventListener('click', animateBtn)
 
-navbar.addEventListener('click', navbarBgcolor);
+
+// darkModeBtn.addEventListener('click', darkMode);
