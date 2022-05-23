@@ -172,36 +172,13 @@
         </div>
     </section>
 
-   <!-- Slider main container -->
-   <!-- <section id="cs-container">
-    <div id="slider-container">
-      <span onclick="slideRight()" class="btn"></span>
-        <div id="slider">
-          <div class="slide"><span>1</span></div>
-          <div class="slide"><span>2</span></div>
-          <div class="slide"><span>3<span></div>
-          <div class="slide"><span>4</span></div>
-          <div class="slide"><span>5</span></div>
-          <div class="slide"><span>6</span></div>
-          <div class="slide"><span>7</span></div>
-          <div class="slide"><span>8</span></div>
-          <div class="slide"><span>9</span></div>
-          <div class="slide"><span>10</span></div>
-      </div>
-      <span onclick="slideLeft()" class="btn"></span>
-    </div>
-   </section> -->
-
-<!-- Slider main container -->
     <section style="margin-top: 160px;" class="container-fluid">
         <div style="width: 80% !important; margin: 0 auto 100px auto;" class="d-flex align-items-center">
             <img class="selfProject-img" width="100vw" src="dist/image/Self-projects.svg" alt="">
             <h2 style="color: #62C5B3; text-transform: uppercase;">My Work</h2>
         </div>
         <div class="swiper-container-1 swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
                <div class="box">
                    <img width="100%" height="50%"src="dist/image/projects/invision.png" alt="">
@@ -234,12 +211,8 @@
                    <p class="m-3">In this project I used figma, html, css and bootrstrap5 to design and create a book store page for my training course.</p>
                 </div>
             </div>
-           
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
@@ -275,33 +248,25 @@
                 <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
               </svg>
         </a>
-        
     </footer>
-
-    <script src="dist/js/script.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
 var swiper1 = new Swiper('.swiper-container-1', {
-  // Optional parameters
-  
         loop: true,
         autoplay: {
             delay: 5000,
         },
         
         breakpoints: {
-            // when window width is >= 320px
             320: {
             slidesPerView: 1,
             spaceBetween: 0,
             centeredSlides: true,
             },
-            // when window width is >= 480px
             480: {
             slidesPerView: 2,
             spaceBetween: 250
             },
-            // when window width is >= 640px
             640: {
             slidesPerView: 4,
             spaceBetween: 340,
@@ -311,14 +276,10 @@ var swiper1 = new Swiper('.swiper-container-1', {
             spaceBetween: 300,
             }
         },         
-        
-        // If we need pagination
         pagination: {
             el: '.swiper-pagination',
             clickable: true
         },
-
-        // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
