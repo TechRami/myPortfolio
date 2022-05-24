@@ -1,102 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 
 
-
-.box-overlay{
-	height: 450px;
-	width: 0;
-	background: #242729;
-	cursor: pointer;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 2;
-	opacity: 0;
-	transition: all .6s ease;
-	display: flex;
-	flex-direction: column;
-	
-}
-
-.box-overlay .box-overlay-buttons{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.netlify-button, .github-button, .figma-button {
-	padding: 15px 10px;
-	width: 200px;
-	border: none;
-	margin: 8px;
-	text-align: left;
-	opacity: 0;
-	transition: opacity 1.4s ease;
-}
-
-.m-con:hover .box-overlay-buttons button {
-	opacity: 1;
-}
-
-
-
-.github-button{
-	background: #1F1F1F;
-	color: #fff;
-	border-radius: 8px;
-}
-
-
-.figma-button{
-	background: #FF7EF2;
-	color: #fff;
-	border-radius: 8px;
-}
-
-.netlify-button{
-	background: #fff;
-	color: #666;
-	border-radius: 8px;
-}
-
-.github-button img{
-	border-right: 1px solid rgba(255, 255, 255, 0.301);
-	padding-right: 8px;
-}
-
-.figma-button img{
-	border-right: 1px solid rgba(255, 255, 255, 0.301);
-	padding-right: 8px;
-}
-
-.netlify-button img{
-	border-right: 1px solid rgba(0, 0, 0, 0.301);
-	padding-right: 8px;
-}
-
-
-.right-anim{
-	height:  450px;
-	top: 0;
-	left: 0;
-	width: 0px;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-.m-con:hover .right-anim{
-	width: 336px;
-	opacity: 1;
-}
-
-
-.box-overlay h5, p{
-	color: #e6e6e6;
-}
-
-
-
-
 :root {
 	--main-bg-color: rgb(0, 255, 42);
   }
@@ -174,16 +78,11 @@ img {
 }
 
 .swiper {			
-	height: 500px;
+	height: 450px;
 }
 
 .swiper-container-2 .swiper-slide {
 	background: #242729;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	width: 100%;
-	margin: 0 auto;
 	border-radius: 11px;
 }
 
@@ -340,14 +239,16 @@ a {
 
 /* MY WORK SECTION */
 
+
+
 .selfProject-img {
 	width: 100px;
 	margin-right: 50px;
 }
 
-.box{
-	height: 450px;
-	width: 336px !important;
+.m-con{
+	height: 90% !important;
+	width: 335px !important;
 	background: #242729;
 	cursor: pointer;
 }
@@ -355,6 +256,100 @@ a {
 .box h5, p{
 	color: #e6e6e6;
 }
+
+.box-overlay{
+	height: 100% !important;
+	width: 0;
+	background: #242729;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	opacity: 0;
+	transition: all .6s ease;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.box-overlay .box-overlay-buttons{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+.netlify-button, .github-button, .figma-button {
+	padding: 15px 10px;
+	width: 200px;
+	border: none;
+	margin: 8px;
+	text-align: left;
+	opacity: 0;
+	transition: opacity 1.2s ease;
+	transition-delay: 0.2s;
+}
+
+.m-con:hover .box-overlay-buttons button {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.github-button{
+	background: #1F1F1F;
+	color: #fff;
+	border-radius: 8px;
+}
+
+
+.figma-button{
+	background: #FF7EF2;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.netlify-button{
+	background: #fff;
+	color: #666;
+	border-radius: 8px;
+}
+
+.github-button img{
+	border-right: 1px solid rgba(255, 255, 255, 0.301);
+	padding-right: 8px;
+}
+
+.figma-button img{
+	border-right: 1px solid rgba(255, 255, 255, 0.301);
+	padding-right: 8px;
+}
+
+.netlify-button img{
+	border-right: 1px solid rgba(0, 0, 0, 0.301);
+	padding-right: 8px;
+}
+
+
+.right-anim{
+	height:  450px;
+	top: 0;
+	left: 0;
+	width: 0px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.m-con:hover .right-anim{
+	width: 336px;
+	opacity: 1;
+}
+
+
+.box-overlay h5, p{
+	color: #e6e6e6;
+}
+
 
 /* ----------------- */
 
