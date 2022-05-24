@@ -628,14 +628,14 @@ a {
 	
 	}
 	.swiper-container-2 .swiper-slide{
-		border-top-left-radius: 70px !important;
+		border-top-left-radius: 99px !important;
 	}
 	
 	.swiper-button-prev, .swiper-button-next {
 		opacity: 0;
 	}
 
-	.swiper-slide .box {
+	.swiper-slide .box, .box-overlay  {
 		margin: 0 auto !important;
 	}
 	
