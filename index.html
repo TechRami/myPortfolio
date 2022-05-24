@@ -44,16 +44,16 @@
 
     <section style="width: 80% !important; margin-top: 200px; " class="container-fluid">
         <div class="row">
-            <div class="col-md-7 order-1 banner-text d-flex flex-column mt-4">
-                <div style="margin: auto 0;" class="text-content align-self-center">
+            <div class="col-md-6 order-1 banner-text d-flex flex-column mt-4">
+                <div style="margin: auto 0;" class="text-content ">
                     <h3 style="color: #fff">Hey i'm Rami, a</h3>
                     <h1 class="text-uppercase">software engineer</h1>
                     <h5 id="about-me" style="color: #D90429" class="text-uppercase">FULLSTACK WEB DEVELOPER AND A DESIGNER.</h5>
-                    <button style="color: #fff;" class="text-uppercase download-btn align-items-end">Download Resume</button>
+                    <button style="color: #fff;" class="text-uppercase download-btn">Download Resume</button>
                 </div>
             </div>
-            <div class="col-md-5 order-md-1 text-center align-self-center">
-                <img style="width: 80%; height: auto; float: right;" src="dist/image/undraw_product_iteration_kjok.svg" alt="programmer-vector">
+            <div class="col-md-6 order-md-1 text-center align-self-center">
+                <img id="testing" style="width: 70%; height: auto; float: right;" src="dist/image/undraw_product_iteration_kjok.svg" alt="programmer-vector">
             </div>
           </div>
     </section>
@@ -129,7 +129,23 @@
         </div>
         <div class="swiper-container-1 swiper">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide m-con">
+                <div class="box-overlay right-anim">
+                    <div class="box-overlay-buttons">
+                        <button class="github-button">
+                            <img  src="dist/image/github-icon.svg" alt="github-logo">
+                            Source Code
+                        </button>
+                        <button class="figma-button">
+                            <img  src="dist/image/figma-icon.svg" alt="figma-logo">
+                            View in Figma
+                        </button>
+                        <button class="netlify-button">
+                            <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
+                            View Live!
+                        </button>
+                    </div>
+             </div>
                <div class="box">
                    <img width="100%" height="50%"src="dist/image/projects/invision.png" alt="">
                    <h5 class="m-3">Invision Web Page</h5>
@@ -137,7 +153,23 @@
                    <p class="m-3">In this project I recreated the InVision web page using html, css and bootstrap 5 to practice my front-end skills.</p>
                </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide m-con">
+                <div class="box-overlay right-anim">
+                        <div class="box-overlay-buttons">
+                            <button class="github-button">
+                                <img  src="dist/image/github-icon.svg" alt="github-logo">
+                                Source Code
+                            </button>
+                            <button class="figma-button">
+                                <img  src="dist/image/figma-icon.svg" alt="figma-logo">
+                                View in Figma
+                            </button>
+                            <button class="netlify-button">
+                                <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
+                                View Live!
+                            </button>
+                        </div>
+                 </div>
                 <div class="box">
                    <img width="100%" height="50%"src="dist/image/projects/To-Do-List.png" alt="">
                    <h5 class="m-3">Todo List Page</h5>
@@ -145,7 +177,23 @@
                    <p class="m-3">In this project I used html, css and Javascript to create a simple todo list web application for practice purposes.</p>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide m-con">
+                <div class="box-overlay right-anim">
+                    <div class="box-overlay-buttons">
+                        <button class="github-button">
+                            <img  src="dist/image/github-icon.svg" alt="github-logo">
+                            Source Code
+                        </button>
+                        <button class="figma-button">
+                            <img  src="dist/image/figma-icon.svg" alt="figma-logo">
+                            View in Figma
+                        </button>
+                        <button class="netlify-button">
+                            <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
+                            View Live!
+                        </button>
+                    </div>
+             </div>
                 <div class="box">
                    <img width="100%" height="50%"src="dist/image/projects/portfolio-page.png" alt="">
                    <h5 class="m-3">Portfolio Page</h5>
@@ -153,7 +201,23 @@
                    <p class="m-3">In this project I used html, css and bootrstrap5 to create a portfolio page, which is an old portfolio page of mine.</p>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide m-con">
+                <div class="box-overlay right-anim">
+                    <div class="box-overlay-buttons">
+                        <button class="github-button">
+                            <img  src="dist/image/github-icon.svg" alt="github-logo">
+                            Source Code
+                        </button>
+                        <button class="figma-button">
+                            <img  src="dist/image/figma-icon.svg" alt="figma-logo">
+                            View in Figma
+                        </button>
+                        <button class="netlify-button">
+                            <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
+                            View Live!
+                        </button>
+                    </div>
+             </div>
                 <div class="box">
                     <img width="100%" height="50%"src="dist/image/projects/bookstore-page.png" alt="">
                    <h5 class="m-3">Book store web page</h5>
@@ -204,7 +268,7 @@
 var swiper1 = new Swiper('.swiper-container-1', {
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 50000,
         },
         
         breakpoints: {
