@@ -47,6 +47,7 @@
 	border-radius: 8px;
 }
 
+
 .figma-button{
 	background: #FF7EF2;
 	color: #fff;
@@ -472,7 +473,6 @@ a {
 
 	.text-content .download-btn{
 		padding: 15px 20px;
-		margin: 10px;
 	}
 
 	.aboutme-row-img{
