@@ -628,16 +628,22 @@ a {
 	
 	}
 	.swiper-container-2 .swiper-slide{
-		border-top-left-radius: 99px !important;
+		border-top-left-radius: 199px !important;
 	}
 	
 	.swiper-button-prev, .swiper-button-next {
 		opacity: 0;
 	}
 
-	.swiper-slide .box, .box-overlay  {
+	.swiper-slide .box, .box-overlay, .right-anim  {
+		margin: 0 auto !important;
+		right: 0;
+	}
+
+	.swiper-wrapper  {
 		margin: 0 auto !important;
 	}
+	
 	
 	form .form-input, .form-textarea, label {
 		width: 100% !important;
