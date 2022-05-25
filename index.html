@@ -30,12 +30,13 @@
                   <li class="nav-item aboutme">
                     <a class="nav-link text-uppercase">About Me</a>
                   </li>
-                  <li class="nav-item mywork">
-                    <a class="nav-link text-uppercase">projects</a>
-                  </li>
-                  <li class="nav-item contact">
-                    <a class="nav-link text-uppercase">Contact</a>
-                  </li>
+                  
+                    <li class="nav-item mywork">
+                      <a class="nav-link text-uppercase">projects</a>
+                    </li>
+                    <li class="nav-item contact">
+                      <a class="nav-link text-uppercase">Contact</a>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -66,7 +67,7 @@
         <div class="row">
             <div class="col-md-6 order-1 text-center align-self-center aboutme-section-first-row">
                 <p style="color: #fff; text-align: left">
-                    I'm a passionate full stack web developer with a keen eye for design and detail. In my spare time, I enjoy expanding my programming knowledge, learning new things, designing and creating web applications, as well as striving to improve in all aspects of the web development field.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan nisi, commodo arcu proin interdum massa id proin id. Vitae aliquam erat eu sed accumsan pellentesque. Netus dolor id nec ac sagittis. Morbi vitae eget suspendisse elementum aliquam.
                 </p>
             </div>
             <div class="col-md-6 order-md-1 text-center">
@@ -147,7 +148,7 @@
                     </div>
              </div>
                <div class="box">
-                   <img width="100%" height="50%"src="dist/image/projects/invision.png" alt="invinsion-image">
+                   <img width="100%" height="50%"src="dist/image/projects/invision.png" alt="">
                    <h5 class="m-3">Invision Web Page</h5>
                    <hr />
                    <p class="m-3">In this project I recreated the InVision web page using html, css and bootstrap 5 to practice my front-end skills.</p>
@@ -195,8 +196,8 @@
                     </div>
              </div>
                 <div class="box">
-                   <img  width="100%" height="50%"src="dist/image/projects/shoe-card-design.png" alt="">
-                   <h5 class="m-3">Shoes Card Design</h5>
+                   <img width="100%" height="50%"src="dist/image/projects/portfolio-page.png" alt="">
+                   <h5 class="m-3">Portfolio Page</h5>
                    <hr />
                    <p class="m-3">In this project I used html, css and bootrstrap5 to create a portfolio page, which is an old portfolio page of mine.</p>
                 </div>
@@ -219,7 +220,7 @@
                     </div>
              </div>
                 <div class="box">
-                    <img width="100%" height="auto"src="dist/image/projects/bookstore-page.png" alt="">
+                    <img width="100%" height="50%"src="dist/image/projects/bookstore-page.png" alt="">
                    <h5 class="m-3">Book store web page</h5>
                    <hr />
                    <p class="m-3">In this project I used figma, html, css and bootrstrap5 to design and create a book store page for my training course.</p>
@@ -243,16 +244,15 @@
                 <img style="width: 50%; height: auto;" src="dist/image/personal_email.svg" alt="personal_email_img">
             </div>
             <div class="col-md-6">
-                <form class="d-flex flex-column" action="https://formsubmit.co/6cdf62b60437d7648f111f6ca331f896" method="POST">
+                <form action="submit" class="d-flex flex-column">
                     <label style="color: white;" for="email">Email:</label>
-                    <input class="form-input" type="text" placeholder="something@gmail.com"  type="email" name="email" required>
+                    <input class="form-input" type="text" placeholder="something@gmail.com">
                     <label style="color: white;" class="mt-5" for="message">Message:</label>
                     <textarea class="form-textarea" name="message" id="e-message" cols="50" rows="10" placeholder=" Write your message..."></textarea>
                     <div class="submit-btn-container">
-                        <button type="submit" style="float: right !important; color: #fff" class="sumbit-btn">Submit</button>
+                        <button style="float: right !important; color: #fff" class="sumbit-btn">Submit</button>
                     </div>
-               </form>
-             
+                </form>
             </div>
         </div>
     </section>
@@ -275,7 +275,7 @@ var swiper1 = new Swiper('.swiper-container-1', {
         breakpoints: {
             320: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 50,
             centeredSlides: true,
             },
             480: {
@@ -284,11 +284,11 @@ var swiper1 = new Swiper('.swiper-container-1', {
             },
             640: {
             slidesPerView: 4,
-            spaceBetween: 60,
+            spaceBetween: 340,
             },
             1280: {
-            slidesPerView: 4,
-            spaceBetween: 128,
+                slidesPerView: 4,
+            spaceBetween: 300,
             }
         },         
         pagination: {
