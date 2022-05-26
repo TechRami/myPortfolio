@@ -546,6 +546,15 @@ a {
 		margin: 0 auto;
 	}
 
+	.swiper {			
+		height: 600px;
+	}
+
+	.swiper-container-2 .swiper-slide{
+		border-top-left-radius: 120px !important;
+	}
+	
+
 	form .form-input, .form-textarea, label {
 		width: 50%;
 		margin: 0 auto !important;
@@ -567,6 +576,7 @@ a {
 	.text-content .download-btn{
 		margin-bottom: 10px;
 	}
+	
 }
 
 
@@ -588,8 +598,13 @@ a {
 	.text-content h1{
 		font-size: 22px !important;
 	}
+
+	.text-content h3{
+	 font-size: 14px !important;
+	}
+
 	.text-content h5{
-		font-size: 8px !important;
+		font-size: 9px !important;
 	}
 
 	h2 {
@@ -606,6 +621,10 @@ a {
 	.aboutme-img{
 		width: 75px;
 		margin-right: 20px;
+	}
+
+	.swiper {			
+		height: 500px;
 	}
 
 	.experience-img{
@@ -626,9 +645,6 @@ a {
 	.mySwiper2{
 		width: 100%;
 	
-	}
-	.swiper-container-2 .swiper-slide{
-		border-top-left-radius: 60px !important;
 	}
 	
 	.swiper-button-prev, .swiper-button-next {
