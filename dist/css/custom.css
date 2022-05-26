@@ -209,9 +209,14 @@ img {
 	
 }
 
+.navbar-brand{
+	cursor:auto;
+}
+
 .nav-item{
 	margin-right: 50px;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 .nav-item:after {
@@ -415,6 +420,7 @@ a {
 	border-radius: 4px;
 	background: #242729;
 	float: right;
+	cursor: pointer;
 }
 
 

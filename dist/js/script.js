@@ -29,3 +29,23 @@ window.onscroll = () => {
         navCon.classList.remove('scrolled');
     }
 };
+
+document.querySelector(".scroll-btn").addEventListener("click", () => {
+    event.preventDefault();
+    window.scrollTo(0, 0);
+   })
+
+document.querySelector(".aboutme").addEventListener("click", () => {
+    event.preventDefault();
+    window.scrollTo(0, 520);
+   })
+
+document.querySelector(".mywork").addEventListener("click", () => {
+    event.preventDefault();
+    window.scrollTo(0, 2050);
+   })
+
+document.querySelector(".contact").addEventListener("click", () => {
+    event.preventDefault();
+    window.scrollTo(0, 2900);
+   }) 
