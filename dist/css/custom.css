@@ -47,7 +47,6 @@
 	border-radius: 8px;
 }
 
-
 .figma-button{
 	background: #FF7EF2;
 	color: #fff;
@@ -170,7 +169,7 @@ img {
 
 .mySwiper2{
 	width: 80%;
-	height: 100%;
+	
 }
 
 .swiper {			
@@ -473,6 +472,7 @@ a {
 
 	.text-content .download-btn{
 		padding: 15px 20px;
+		margin: 10px;
 	}
 
 	.aboutme-row-img{
@@ -628,7 +628,7 @@ a {
 	
 	}
 	.swiper-container-2 .swiper-slide{
-		border-top-left-radius: 199px !important;
+		border-top-left-radius: 60px !important;
 	}
 	
 	.swiper-button-prev, .swiper-button-next {
