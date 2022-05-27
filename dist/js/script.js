@@ -2,6 +2,11 @@ const menuBtn = document.querySelector('.menu-btn');
 const navbar = document.querySelector('.navbar')
 // const darkModeBtn = document.querySelector('.darkModeBtn')
 const pageBody = document.getElementById('pageBody')
+const aboutmeAnim = document.querySelector('.aboutme-section')
+const experienceAnim = document.querySelector('.experience-section')
+const myworkAnim = document.querySelector('.mywork-section')
+const contactmeAnim = document.querySelector('.contactme-section')
+
 
 
 
@@ -23,12 +28,45 @@ menuBtn.addEventListener('click', animateBtn)
 // ----------  Navbar animation on scroll ----------  //
 const navCon = document.querySelector('.navbar');
 window.onscroll = () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY >= 150 && window.scrollY <= 249) {
         navCon.classList.add('scrolled');
-    } else {
+    }
+    else if (window.scrollY >= 250 && window.scrollY <= 999) {
+        aboutmeAnim.style.opacity = '100';
+        aboutmeAnim.style.transform = "translate(0)"
+        // 
+    }
+    else if (window.scrollY >= 1000 && window.scrollY <= 1800) {
+        experienceAnim.style.opacity = '100';
+        experienceAnim.style.transform = "translate(0)"
+        // 
+    }
+    else if (window.scrollY >= 1801 && window.scrollY <= 2599) {
+        myworkAnim.style.opacity = '100';
+        myworkAnim.style.transform = "translate(0)"
+        // 
+    }
+    else if (window.scrollY >= 2600) {
+        contactmeAnim.style.opacity = '100';
+        // 
+    }
+
+    else {
         navCon.classList.remove('scrolled');
+        aboutmeAnim.style.opacity = '0';
+        aboutmeAnim.style.transform = "translate(-20%)"
+        // 
+        experienceAnim.style.opacity = '0';
+        experienceAnim.style.transform = "translateY(20%)"
+        // 
+        myworkAnim.style.opacity = '0';
+        myworkAnim.style.transform = "translate(-20%)"
+        // 
+        contactmeAnim.style.opacity = '0';
     }
 };
+
+
 
 document.querySelector(".scroll-btn").addEventListener("click", () => {
     event.preventDefault();
