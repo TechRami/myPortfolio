@@ -128,21 +128,21 @@
         </div>
         <div class="swiper-container-1 swiper">
             <div class="swiper-wrapper">
-            <div class="swiper-slide m-con">
+            <div class="swiper-slide m-con custom-swiper  ">
                 <div class="box-overlay right-anim">
                     <div class="box-overlay-buttons">
-                        <button class="github-button">
+                        <a class="github-button">
                             <img  src="dist/image/github-icon.svg" alt="github-logo">
                             Source Code
-                        </button>
-                        <button class="figma-button">
+                        </a>
+                        <a class="figma-button">
                             <img  src="dist/image/figma-icon.svg" alt="figma-logo">
                             View in Figma
-                        </button>
-                        <button class="netlify-button">
+                        </a>
+                        <a class="netlify-button">
                             <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
                             View Live!
-                        </button>
+                        </a>
                     </div>
              </div>
                <div class="box">
@@ -152,21 +152,21 @@
                    <p class="m-3">In this project I recreated the InVision web page using html, css and bootstrap 5 to practice my front-end skills.</p>
                </div>
             </div>
-            <div class="swiper-slide m-con">
+            <div class="swiper-slide m-con custom-swiper ">
                 <div class="box-overlay right-anim">
                         <div class="box-overlay-buttons">
-                            <button class="github-button">
+                            <a class="github-button">
                                 <img  src="dist/image/github-icon.svg" alt="github-logo">
                                 Source Code
-                            </button>
-                            <button class="figma-button">
+                            </a>
+                            <a class="figma-button">
                                 <img  src="dist/image/figma-icon.svg" alt="figma-logo">
                                 View in Figma
-                            </button>
-                            <button class="netlify-button">
+                            </a>
+                            <a class="netlify-button">
                                 <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
                                 View Live!
-                            </button>
+                            </a>
                         </div>
                  </div>
                 <div class="box">
@@ -176,21 +176,21 @@
                    <p class="m-3">In this project I used html, css and Javascript to create a simple todo list web application for practice purposes.</p>
                 </div>
             </div>
-            <div class="swiper-slide m-con">
+            <div class="swiper-slide m-con custom-swiper ">
                 <div class="box-overlay right-anim">
                     <div class="box-overlay-buttons">
-                        <button class="github-button">
+                        <a class="github-button">
                             <img  src="dist/image/github-icon.svg" alt="github-logo">
                             Source Code
-                        </button>
-                        <button class="figma-button">
+                        </a>
+                        <a class="figma-button">
                             <img  src="dist/image/figma-icon.svg" alt="figma-logo">
                             View in Figma
-                        </button>
-                        <button class="netlify-button">
+                        </a>
+                        <a class="netlify-button">
                             <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
                             View Live!
-                        </button>
+                        </a>
                     </div>
              </div>
                 <div class="box">
@@ -200,21 +200,21 @@
                    <p class="m-3">In this project I used html, css and bootrstrap5 to create a portfolio page, which is an old portfolio page of mine.</p>
                 </div>
             </div>
-            <div class="swiper-slide m-con">
+            <div class="swiper-slide m-con custom-swiper ">
                 <div class="box-overlay right-anim">
                     <div class="box-overlay-buttons">
-                        <button class="github-button">
+                        <a class="github-button">
                             <img  src="dist/image/github-icon.svg" alt="github-logo">
                             Source Code
-                        </button>
-                        <button class="figma-button">
+                        </a>
+                        <a class="figma-button">
                             <img  src="dist/image/figma-icon.svg" alt="figma-logo">
                             View in Figma
-                        </button>
-                        <button class="netlify-button">
+                        </a>
+                        <a class="netlify-button">
                             <img  src="dist/image/netlify-icon.svg" alt="netlify-logo">
                             View Live!
-                        </button>
+                        </a>
                     </div>
              </div>
                 <div class="box">
@@ -265,34 +265,37 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
 var swiper1 = new Swiper('.swiper-container-1', {
-        loop: true,
-        autoplay: {
-            delay: 50000,
-        },
-        
-        breakpoints: {
+    loop: true,
+    noSwiping: true,
+    noSwipingSelector: 'button',
+    preventClicks: true,
+    preventClicksPropagation: false ,
+    noSwipingClass: 'github-button',
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+            
+            },
             320: {
             slidesPerView: 1,
             spaceBetween: 50,
-            centeredSlides: true,
+           
             },
             480: {
-            slidesPerView: 2,
-            spaceBetween: 250
+            slidesPerView: 1,
+            spaceBetween: 50
             },
             640: {
-            slidesPerView: 4,
-            spaceBetween: 340,
+            slidesPerView: 2,
+            spaceBetween: 20,
             },
             1280: {
                 slidesPerView: 4,
-            spaceBetween: 300,
+            spaceBetween: 20,
             }
         },         
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

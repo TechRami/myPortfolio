@@ -9,7 +9,7 @@
 
 .aboutme-section {
 	opacity: 0;
-	transition: all 1.5s;
+	transition: all 1s;
 }
 
 .experience-section { 
@@ -37,24 +37,28 @@
 	}
 }
 
+.custom-swiper {
+    height: 500px !important; 
+    display:flex;
+    flex-direction: column;
+    background: rgb(255, 156, 156);
+    transition:all 200ms linear;
+    transform: scale(0.8);
+  }
 
-
-
-.box-overlay{
-	height: 450px;
-	width: 0;
-	background: #242729;
-	cursor: pointer;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 2;
-	opacity: 0;
-	transition: all .6s ease;
-	display: flex;
-	flex-direction: column;
-	
-}
+  .box-overlay{
+    height: 100%;
+    width: 100%;
+    background: #00000050;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: all .6s ease;
+    display: flex;
+    flex-direction: column;
+  }
 
 .box-overlay .box-overlay-buttons{
 	position: absolute;
@@ -64,20 +68,20 @@
 }
 
 .netlify-button, .github-button, .figma-button {
-	padding: 15px 10px;
-	width: 200px;
-	border: none;
-	margin: 8px;
-	text-align: left;
-	opacity: 0;
-	transition: opacity 1.4s ease;
-}
+    padding: 15px 10px;
+    width: 200px;
+    border: none;
+    margin: 8px;
+    text-align: left;
+    opacity: 1;
+    transition: opacity 1.4s ease;
+    cursor: pointer;
+  }
 
-.m-con:hover .box-overlay-buttons button {
-	opacity: 1;
-}
-
-
+  .box-overlay-buttons{
+	display:flex;
+    flex-direction: column;
+  }
 
 .github-button{
 	background: #1F1F1F;
@@ -112,19 +116,9 @@
 	padding-right: 8px;
 }
 
-
-.right-anim{
-	height:  450px;
-	top: 0;
-	left: 0;
-	width: 0px;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-.m-con:hover .right-anim{
-	width: 336px;
-	opacity: 1;
-}
+.custom-swiper:hover .right-anim{
+    opacity: 1;
+  }
 
 
 .box-overlay h5, p{
@@ -184,6 +178,13 @@ img {
  	user-select: none; /* Standard syntax */
 }
 
+.box-overlay-buttons a {
+	text-decoration: none !important;
+}
+
+.box-overlay-buttons a:hover {
+	color: #ddd !important;
+}
 
 /* ------------------------------------------------ */
 
@@ -401,10 +402,9 @@ img {
 }
 
 .box{
-	height: 450px;
-	width: 336px !important;
 	background: #242729;
-	cursor: pointer;
+	height: 100%;
+	width: 100%;
 }
 
 .box h5, p{
