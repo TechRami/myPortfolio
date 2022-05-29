@@ -41,9 +41,9 @@
     height: 500px !important; 
     display:flex;
     flex-direction: column;
-    background: rgb(255, 156, 156);
     transition:all 200ms linear;
     transform: scale(0.8);
+	cursor: grab;
   }
 
   .box-overlay{
@@ -121,8 +121,9 @@
   }
 
 
-.box-overlay h5, p{
+.box h4, p{
 	color: #e6e6e6;
+	margin-top: 40px !important;
 }
 
 
@@ -405,6 +406,8 @@ img {
 	background: #242729;
 	height: 100%;
 	width: 100%;
+    overflow: hidden;
+	
 }
 
 .box h5, p{
