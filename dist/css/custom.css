@@ -151,10 +151,11 @@
 
 *::-webkit-scrollbar {
     width: 11px;
+	background: #242729;
   }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #5c5c5c;
+    background-color: #D80429;
     border-radius: 10px;
   }
 
@@ -172,9 +173,8 @@ html {
 }
 
 body {
-    
 	background-image: url(../image/polygon.png);
-	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 img {
