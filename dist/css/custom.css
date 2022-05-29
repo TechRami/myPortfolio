@@ -175,6 +175,7 @@ html {
 body {
 	background-image: url(../image/polygon.png);
 	overflow-x: hidden;
+	height: 429vh;
 }
 
 img {
@@ -247,6 +248,20 @@ img {
 	max-width: 44px;
 	max-height: 120px;
 }
+
+.linkedin-icon {
+	position: sticky;
+	top: 820px;
+	margin: 0 0 30px 40px;
+	cursor: pointer;
+}
+
+.linkedin-icon img:hover {
+	transform: scale(0.9); 
+	transition: all .9s ;
+}
+
+
 
 .nav{
     margin-left: 50px;
