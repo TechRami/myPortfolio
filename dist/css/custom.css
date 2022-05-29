@@ -254,6 +254,7 @@ img {
 	top: 890px;
 	margin: 0 0 0 40px;
 	cursor: pointer;
+	z-index: 9999;
 }
 
 .linkedin-icon img:hover {
