@@ -204,10 +204,8 @@ img {
 	transition: background-color 200ms linear !important;
   }
 
- .scrolled nav-link {} 
-
 .bgc-dark {
-	background: #242729;
+	background: #ffffff;
   }
 
 
@@ -289,6 +287,18 @@ img {
 	text-decoration: none;
 }
 
+.menu-btn .active-menuButton {
+	background-color: #696969 !important;
+}
+
+.active-navLink {
+	color: #7963FF !important;
+}
+
+.active-logo {
+	fill: #7963FF !important;
+}
+
 
 .navbar-toggler:focus{
 	box-shadow: none !important;
@@ -304,10 +314,10 @@ img {
     cursor: pointer;
 }
 
-.menu-btn .line{
+ .line{
     width: 34px;
     height: 2px;
-    background-color: #696969;
+    background-color: #ffffff;
     margin-block: 5px;
     transition: transform .5s, opacity .25s;
 }

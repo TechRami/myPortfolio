@@ -7,15 +7,21 @@ const experienceAnim = document.querySelector('.experience-section')
 const myworkAnim = document.querySelector('.mywork-section')
 const contactmeAnim = document.querySelector('.contactme-section')
 const navLinks = document.getElementsByClassName('nav-link')
+const menuLines = document.getElementsByClassName('line')
 const logo = document.getElementsByClassName('logo')[0]
-
-console.log(navLinks)
-
+// const navCon = document.querySelector('.navbar');
 
 
 const animateBtn = () =>{
     menuBtn.classList.toggle('active');
     navbar.classList.toggle('bgc-dark');
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.toggle('active-navLink')
+    }
+    for (let i = 0; i < menuLines.length; i++) {
+        menuLines[i].classList.toggle('active-menuButton')
+    }
+    logo.classList.toggle('active-logo')
 }
 
 menuBtn.addEventListener('click', animateBtn)
@@ -29,14 +35,16 @@ menuBtn.addEventListener('click', animateBtn)
 
 
 // ----------  Navbar animation on scroll ----------  //
-const navCon = document.querySelector('.navbar');
 window.onscroll = () => {
     if (window.scrollY >= 150 && window.scrollY <= 249) {
-        navCon.classList.add('scrolled');
+        navbar.classList.add('scrolled');
         for (let i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = '#7963FF'
         }
         logo.style.fill = '#7963FF'
+        for (let i = 0; i < menuLines.length; i++) {
+            menuLines[i].style.backgroundColor = '#696969'
+        }
         
     }
     else if (window.scrollY >= 250 && window.scrollY <= 999) {
@@ -60,7 +68,7 @@ window.onscroll = () => {
     }
 
     else {
-        navCon.classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
         aboutmeAnim.style.opacity = '0';
         aboutmeAnim.style.transform = "translate(-20%)"
         // 
@@ -76,6 +84,9 @@ window.onscroll = () => {
             navLinks[i].style.color = '#fff'
         }
         logo.style.fill = '#ffffff'
+        for (let i = 0; i < menuLines.length; i++) {
+            menuLines[i].style.backgroundColor = '#ffffff'
+        }
     }
 };
 
