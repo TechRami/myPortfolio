@@ -176,8 +176,6 @@ html {
 body {
 	background-image: url('../image/wave.svg');
 	background-repeat: no-repeat;
-	/* background-size: cover; */
-	/* background-size: 100%; */
 	overflow-x: hidden;
 }
 
@@ -343,7 +341,7 @@ img {
 .img-frame {
 	position: relative;
 	width: 420px;
-	float: right;
+	margin: 0 0 0 auto;
 }
 
 .img-frame img {
@@ -633,7 +631,6 @@ img {
 	.text-content .download-btn{
 		padding: 10px 15px;
 		font-size: 12px;
-		float: unset;
 		margin: 10px 0;
 	}
 
@@ -690,7 +687,6 @@ img {
 	.aboutme-row-img{
 		width: 80%;
 		margin-top: 50px;
-		float: none;
 		margin: 0 auto;
 	}
 
