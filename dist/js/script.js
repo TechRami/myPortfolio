@@ -6,7 +6,10 @@ const aboutmeAnim = document.querySelector('.aboutme-section')
 const experienceAnim = document.querySelector('.experience-section')
 const myworkAnim = document.querySelector('.mywork-section')
 const contactmeAnim = document.querySelector('.contactme-section')
+const navLinks = document.getElementsByClassName('nav-link')
+const logo = document.getElementsByClassName('logo')[0]
 
+console.log(navLinks)
 
 
 
@@ -30,6 +33,11 @@ const navCon = document.querySelector('.navbar');
 window.onscroll = () => {
     if (window.scrollY >= 150 && window.scrollY <= 249) {
         navCon.classList.add('scrolled');
+        for (let i = 0; i < navLinks.length; i++) {
+            navLinks[i].style.color = '#7963FF'
+        }
+        logo.style.fill = '#7963FF'
+        
     }
     else if (window.scrollY >= 250 && window.scrollY <= 999) {
         aboutmeAnim.style.opacity = '100';
@@ -63,6 +71,11 @@ window.onscroll = () => {
         myworkAnim.style.transform = "translate(-20%)"
         // 
         contactmeAnim.style.opacity = '0';
+        // 
+        for (let i = 0; i < navLinks.length; i++) {
+            navLinks[i].style.color = '#fff'
+        }
+        logo.style.fill = '#ffffff'
     }
 };
 

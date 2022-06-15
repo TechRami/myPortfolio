@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="dist/image/R.svg">
     <title>Rami's Portfolio Page</title>
-    <link rel="stylesheet" href="dist/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+    />
+    <link rel="stylesheet" href="dist/css/custom.css">
 </head>
 
 <body id="pageBody">
+   <main> 
         <nav class="navbar navbar-expand-md fixed-top">
             <div style="width: 80%; margin: 0 auto;" class="container-fluid nav-container align-center">
-              <a class="navbar-brand"><img class="logo" src="dist/image/R.svg" alt="website-logo"></a>
+              <a class="navbar-brand">
+                <svg class="logo" width="44" height="50" viewBox="0 0 44 50" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M42.696 33.896C43.4213 33.896 43.784 34.8773 43.784 36.84C43.784 37.9067 43.336 39.208 42.44 40.744C41.544 42.2373 40.3707 43.624 38.92 44.904C37.512 46.1413 35.9333 47.1653 34.184 47.976C32.4347 48.7867 30.7707 49.192 29.192 49.192C27.6133 49.192 26.376 48.8933 25.48 48.296C24.584 47.6987 23.88 46.888 23.368 45.864C22.6427 44.4133 22.0453 41.6613 21.576 37.608C21.1067 33.512 20.6373 30.6533 20.168 29.032C19.0587 28.8187 18.0773 28.392 17.224 27.752C16.4133 27.0693 16.008 26.2587 16.008 25.32C16.008 24.3387 16.4347 23.6347 17.288 23.208C18.184 22.7813 19.1867 22.568 20.296 22.568C21.448 22.568 22.472 22.8453 23.368 23.4C24.5627 22.4187 25.5227 21.2667 26.248 19.944C27.016 18.5787 27.4 16.7653 27.4 14.504C27.4 12.2 26.632 10.3653 25.096 9C23.56 7.63467 21.2987 6.952 18.312 6.952C15.368 6.952 13.1067 7.18667 11.528 7.656C9.94933 8.12533 8.584 8.63733 7.432 9.192C6.32267 9.74666 5.32 10.2587 4.424 10.728C3.57067 11.1973 2.76 11.432 1.992 11.432C1.224 11.432 0.84 11.1973 0.84 10.728C0.84 10.216 1.24533 9.40533 2.056 8.296C2.86667 7.18666 4.06133 6.07733 5.64 4.968C9.608 2.19467 14.088 0.829332 19.08 0.871998C24.072 0.871998 28.1893 1.81067 31.432 3.688C35.2293 5.90667 37.128 9.23466 37.128 13.672C37.1707 17.3413 36.2107 20.392 34.248 22.824C32.2853 25.256 29.8533 27.0053 26.952 28.072C27.592 29.48 28.104 30.9947 28.488 32.616C28.9147 34.2373 29.32 35.7307 29.704 37.096C30.088 38.4613 30.5147 39.592 30.984 40.488C31.496 41.384 32.0933 41.832 32.776 41.832C33.5013 41.832 34.3547 41.4267 35.336 40.616C36.36 39.7627 37.3627 38.8453 38.344 37.864C39.3253 36.8827 40.2 35.9867 40.968 35.176C41.7787 34.3227 42.3547 33.896 42.696 33.896ZM14.856 10.856C15.4107 10.856 15.688 11.5813 15.688 13.032C15.688 14.4827 15.6027 15.848 15.432 17.128C15.048 19.6027 14.5573 21.9067 13.96 24.04C12.424 29.8427 11.656 33.2347 11.656 34.216V43.624C11.656 45.928 10.7813 47.5067 9.032 48.36C8.22133 48.744 7.432 49.1067 6.664 49.448C5.93867 49.7893 5.10667 49.96 4.168 49.96C2.376 49.96 1.48 47.912 1.48 43.816C1.48 39.6773 2.44 34.472 4.36 28.2C6.28 21.928 8.28533 17.1493 10.376 13.864C10.8027 13.224 11.4213 12.5627 12.232 11.88C13.0427 11.1973 13.9173 10.856 14.856 10.856Z"
+                     />
+                </svg>
+              </a>
               <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -41,30 +48,31 @@
           </nav>
     </header>
 
-    <section style="width: 80% !important; margin-top: 250px; " class="container-fluid first-section test">
-        <div class="row">
+    <section style="width: 80% !important; margin-top: 100px; " class="container-fluid first-section test">
+        <div style="height: 50vh;" class="row">
             <div class="col-md-6 order-1 banner-text d-flex flex-column mt-4">
                 <div style="margin: auto 0;" class="text-content">
                     <h3 style="color: #fff">Hey i'm Rami, a</h3>
                     <h1 class="text-uppercase">software engineer</h1>
-                    <h5 id="about-me" style="color: #D90429" class="text-uppercase">FULLSTACK WEB DEVELOPER AND A DESIGNER.</h5>
+                    <h5 id="about-me" style="color: #ffffff" class="text-uppercase">FULLSTACK WEB DEVELOPER AND A DESIGNER.</h5>
                     <button style="color: #fff;" class="text-uppercase download-btn"><a class="download-link" href="dist/pdf/Rami_Yassin_Resume.pdf" download="Rami_YH_RESUME.pdf">Download Resume</a></button>
                 </div>
             </div>
             <div class="col-md-6 order-md-1 text-center align-self-center">
-                <img id="testing" style="width: 70%; height: auto; float: right;" src="dist/image/undraw_product_iteration_kjok.svg" alt="programmer-vector">
+              <div class="img-frame">
+                <img src="dist/image/myPic.png" alt="my-picture">
+              </div>
             </div>
-          </div>
     </section>
-
-    <section style="width: 80%; margin-top: 160px;" class="container-fluid aboutme-section">
+</main>
+    <section style="width: 80%; margin-top: 250px;" class="container-fluid aboutme-section">
         <div class="d-flex align-items-center">
             <img class="aboutme-img" src="dist/image/question-vector.svg" alt="">
-            <h2 style="color: #D90429;">ABOUT ME</h2>
+            <h2 style="color: var(--purple-color);">ABOUT ME</h2>
         </div>
         <div class="row">
             <div class="col-md-6 order-1 text-center align-self-center aboutme-section-first-row">
-                <p style="color: #fff; text-align: left">
+                <p style="color: #2B2B2B; text-align: left">
                     I'm a passionate developer with a keen eye for design and detail. In my spare time, I enjoy expanding my programming knowledge, creating web applications, and striving to improve in all aspects of the web development field.
                 </p>
             </div>
@@ -77,14 +85,14 @@
     <section style="margin-top: 160px; overflow: hidden;" class="container-fluid experience-section">
         <div style="width: 80%; margin: 0 auto 100px auto;" class="d-flex align-items-center con-width">
             <img class="experience-img"  src="dist/image/Experience-vector.svg" alt="">
-            <h2 style="color: #D90429; text-transform: uppercase;">Experience</h2>
+            <h2 style="color: var(--purple-color); text-transform: uppercase;">Experience</h2>
         </div>
         <div class="swiper-container-2 swiper mySwiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                     <div class="row">
                         <div class="col-md-6 order-1 align-self-center">
-                            <h1 style="color: #D90429;"class="ms-4 mt-5 p-3">Frontend Stack</h1>
+                            <h1 style="color: #ffffff;"class="ms-4 mt-5 p-3">Frontend Stack</h1>
                             <ul class="experience-sec-ul">
                                 <li>HTML5</li>
                                 <li>CSS</li>
@@ -103,7 +111,7 @@
              <div class="swiper-slide">
                 <div class="row">
                     <div class="col-md-6 order-1 align-self-center">
-                        <h1 style="color: #D90429;"class="ms-4 mt-5 p-3">Backend Stack</h1>
+                        <h1 style="color: #ffffff;"class="ms-4 mt-5 p-3">Backend Stack</h1>
                         <ul class="experience-sec-ul">
                             <li>NodeJS</li>
                             <li>ExpressJS</li>
@@ -124,7 +132,7 @@
     <section style="margin-top: 160px;" class="container-fluid mywork-section">
         <div style="width: 80%; margin: 0 auto 100px auto;" class="d-flex align-items-center con-width">
             <img class="selfProject-img" width="100vw" src="dist/image/Self-projects.svg" alt="self-project-img">
-            <h2 style="color: #D90429; text-transform: uppercase;">My Work</h2>
+            <h2 style="color: #7963FF; text-transform: uppercase;">My Work</h2>
         </div>
         <div class="swiper-container-1 swiper">
             <div class="swiper-wrapper">
@@ -255,7 +263,7 @@
     <section style="margin-top: 160px;" class="container-fluid contactme-section">
         <div style="width: 80%; margin: 0 auto 100px auto;" class="d-flex align-items-center con-width">
             <img class="contact-img" src="dist/image/CONTACT-ME.svg" alt="">
-            <h2 style="color: #D90429; text-transform: uppercase;">Contact Me</h2>
+            <h2 style="color: #7963FF; text-transform: uppercase;">Contact Me</h2>
         </div>
         <div class="row">
             <div class="col-md-6 text-center">
@@ -276,7 +284,7 @@
     </section>
     <footer style="margin-top: 160px; width: 95%;" class="container-fluid">
         <a style="margin-bottom: 50px;" class="scroll-btn text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" fill="#D90429" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" fill="#7963FF" class="bi bi-arrow-up" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
               </svg>
         </a>
