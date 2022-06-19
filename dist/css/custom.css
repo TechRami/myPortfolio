@@ -483,6 +483,7 @@ img {
 
 .form-textarea:focus {
 	outline: 1px solid #8FAEFF;
+	border: 1px solid #8FAEFF;
 }
 
 .form-input{
