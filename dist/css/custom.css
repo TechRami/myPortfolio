@@ -482,7 +482,7 @@ img {
 }
 
 .form-textarea:focus {
-	outline: 1px solid #ffffff;
+	outline: 1px solid #8FAEFF;
 }
 
 .form-input{
@@ -497,7 +497,7 @@ img {
 }
 
 .form-input:focus{
-	border-bottom: 1px solid #2B2B2B;
+	border-bottom: 1px solid #8FAEFF;
 }
 
 .submit-btn-container {
@@ -533,6 +533,11 @@ img {
 /* ------------------- MEDIA QUERIES -------------------  */
 /* ----------- FROM LARGE TO SMALL WIDTH SIZES -----------  */
 
+@media only screen and (min-width: 1921px){
+	body {
+		background-image: url('../image/wave-wide.svg') !important;
+	}
+}
 
 
 @media only screen and (max-width: 1670px) {
